@@ -29,10 +29,7 @@ class CustomTableViewCell: UITableViewCell {
         self.closedDateLabel.text = closedAt
         self.userNameLabel.text = userName
         
-        guard let userImageURL = URL(string: userImage!) else {
-            self.userImage.image = UIImage(named: "noImageAvailable")
-            return
-        }
+        guard let userImageURL = URL(string: userImage!) else { return }
         
         // Before we download the image we clear out the old one
         self.userImage.image = nil

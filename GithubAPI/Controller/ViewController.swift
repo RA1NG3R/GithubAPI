@@ -12,11 +12,12 @@ class ViewController: UIViewController {
     @IBOutlet weak var tblView: UITableView!
     
     private var viewModel = OwnerViewModel()
+    private let height: CGFloat = 150
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationItem.title = "All Closed Pull Requests"
-        self.tblView.rowHeight = 150
+        self.tblView.rowHeight = self.height
         loadOwnerData()
     }
     
@@ -30,6 +31,7 @@ class ViewController: UIViewController {
     }
 }
 
+// MARK: - TableView
 extension ViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return viewModel.numberOfRowsInSection(section: section)

@@ -13,7 +13,7 @@ class Service {
     
     func getOwnerData(completion: @escaping(Result<[Owner], Error>) -> Void) {
         
-        let githubPullsURL = "https://api.github.com/repos/nodejs/node/pulls?state=closed&base=canary-base"
+        let githubPullsURL = "https://api.github.com/repos/RA1NG3R/GithubAPI/pulls?state=closed&base=main"
         
         guard let url = URL(string: githubPullsURL) else {return}
         

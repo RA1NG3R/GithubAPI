@@ -64,10 +64,11 @@
 		5D092EC428A79296003510F0 /* GithubAPI */ = {
 			isa = PBXGroup;
 			children = (
-				5D092EE028A83775003510F0 /* View */,
-				5D092EDF28A7F8E4003510F0 /* Controller */,
 				5D092ED928A7951B003510F0 /* Model */,
+				5D092EE028A83775003510F0 /* View */,
 				5D092EDC28A7F653003510F0 /* ViewModel */,
+				5D092EDF28A7F8E4003510F0 /* Controller */,
+				5D092EE528A99B35003510F0 /* Service */,
 				5D092EC528A79296003510F0 /* AppDelegate.swift */,
 				5D092EC728A79296003510F0 /* SceneDelegate.swift */,
 				5D092ECE28A79297003510F0 /* Assets.xcassets */,
@@ -88,7 +89,6 @@
 		5D092EDC28A7F653003510F0 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				5D092EDD28A7F67A003510F0 /* Service.swift */,
 				5D092EE328A91A62003510F0 /* OwnerViewModel.swift */,
 			);
 			path = ViewModel;
@@ -109,6 +109,14 @@
 				5D092ECB28A79296003510F0 /* Main.storyboard */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		5D092EE528A99B35003510F0 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				5D092EDD28A7F67A003510F0 /* Service.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

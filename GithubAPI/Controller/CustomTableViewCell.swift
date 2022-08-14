@@ -16,8 +16,6 @@ class CustomTableViewCell: UITableViewCell {
     @IBOutlet weak var closedDateLabel: UILabel!
     @IBOutlet weak var userNameLabel: UILabel!
     
-    private var urlString: String = ""
-    
     // Setup movies values
     func setCellWithValuesOf(_ owner: Owner) {
         updateUI(title: owner.title, createdAt: owner.createdAt, closedAt: owner.closedAt, userName: owner.user?.login, userImage: owner.user?.avatarURL)

@@ -15,6 +15,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationItem.title = "All Closed Pull Requests"
         self.tblView.rowHeight = 150
         loadOwnerData()
     }
